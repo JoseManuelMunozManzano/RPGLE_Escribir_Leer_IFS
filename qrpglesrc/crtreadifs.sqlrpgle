@@ -54,7 +54,7 @@
 
     Exec Sql
       SELECT LINE into :texto
-      FROM TABLE(QSYS2.IFS_READ('/home/JOMUMA/test.txt'))
+      FROM TABLE(QSYS2.IFS_READ('/home/JOMUMA/writereadifs/test.txt'))
       WHERE LINE_NUMBER = :linea;
 
     return;
